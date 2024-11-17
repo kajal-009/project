@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(5, 56, 83);
+}
+.header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding:20px 10px;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 2.5rem;
+}
+
+.navbar > a{
+    font-size: 1.1rem;
+    margin-right:1.2rem;
+   
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 2% 7rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 5rem;
+}
+.home>.home_content{
+    max-width: 30rem;
+}
+.home_content > h3{
+    font-size: 2.7rem;
+    font-weight: 700;                 
+}
+.home_content > h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.home_content > p{
+    font-size: 1.3rem;
+}
+
+.home_content > .social_media{
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+
+}
+
+.home_content > .social_media >a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 50%;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.my_image >.image_box{
+    width: 25vw;
+    height: 25vw;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-left: 10rem;
+    padding: 6px;
+}
+.my_image >.image_box>.image_item{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.image_item>img{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: greenyellow;
+    
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.about>.about_img{
+    width: 25vw;
+    height: 25vw;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.about_img>img{
+    position: absolute;
+    top:10.2rem;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 50%;
+    background-color: greenyellow;
+    padding: 6px;
+}  
+.heading{
+    font-size:2.5rem;
+    text-align: center;
+    color: yellowgreen;
+    font-weight: 900;
+    text-decoration-line: underline;
+}
+span{
+    color: white;
+}
+.about_content>.first{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.about_content>.second{
+    font-size: 1.5rem;
+    color: white;
+
+}
+.about_content>h2{
+    margin-bottom: 4rem;
+}
+.about_content{
+
+    margin-left: 5rem;
+    color: white;
+    width: 35rem ;
+}
+
+
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio_box>img{
+    height: 300px;
+    width: 250px;
+    border: 5px white solid;
+    border-radius: 20px;
+    overflow:hidden;
+    transition: .5s ease;
+    
+   
+}
+.portfolio_box>h4{
+    color: white;
+    font-size: 1.2rem;
+
+}
+.portfolio >.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+
+   
+.portfolio_box>img:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgb(234, 231, 231);
+    transform: scale(1.1);
+}
+.contact >h2{
+    margin-bottom: 3rem;
+}
+.contact>form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact>form>.input_box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.contact >form, .input_box >input,.contact >form> textarea{
+    width: 100%;
+    padding: .9rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color:yellowgreen;
+    border-radius: 0.8rem;
+    box-shadow: 0 .1rem .5rem rgb(171, 164, 164);
+}
+button{
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1.2rem 2.8rem;
+    background-color: greenyellow;
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem rgb(171, 164, 164);
+    cursor: pointer;
+    margin-top: 2rem;
+    color:white;
+
+}
+.contact>form>textarea{
+    resize: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color:greenyellow;
+}
+
+.footer_text>p{
+    font-size: 1.4rem;
+    color: white;
+}
+.footer_icontop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem;
+    background-color: white;border-radius: .7rem;
+    border: .2rem grey solid;
+}
+@media(max-width:480px){
+    body{
+        background-color: lightcoral;
+    }
+    
+} 
+    
